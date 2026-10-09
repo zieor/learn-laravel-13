@@ -56,3 +56,17 @@ php artisan key:generate
 php artisan migrate --seed
 ```
 
+## Настройки подключения к БД
+
+Настройки параметры подключения к БД (файл **.env**)
+```php
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1 #=MySQL-8.4
+DB_PORT=3306
+DB_DATABASE=learn-laravel-13
+DB_USERNAME=root
+DB_PASSWORD=
+
+SESSION_DRIVER=file
+```
+
