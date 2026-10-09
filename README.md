@@ -34,4 +34,25 @@ RewriteEngine on
 RewriteRule ^(.*)$ public/$1 [L]
 ```
 
+## Установка Laravel из репозитория 
+
+Откройте консоль домашней директории сайта
+Выполните клонирование репозитория в домашнюю директорию сайта и установите все зависимости.
+```bash
 git clone https://github.com/zieor/learn-laravel-13.git
+composer install
+```
+Скопирауем файл **.env** из файла **.env.example**.
+```bash
+copy .env.example .env
+```
+
+Сгенерируем ключ шифрования
+```bash
+php artisan key:generate
+```
+Выполните миграцию
+```bash
+php artisan migrate --seed
+```
+
